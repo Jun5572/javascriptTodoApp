@@ -6,10 +6,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/index.css">
+  <link
+      href="https://jsprimer.net/use-case/todoapp/final/final/index.css"
+      rel="stylesheet"
+    />
   <title>TODO APP | Jun</title>
 </head>
 <body>
-  <h1>TODO APP</h1>
-  <script src="js/main.js"></script>
+  <div class="todoapp">
+    <form id="js-form">
+      <input 
+        type="text"
+        id="js-form-input"
+        class="new-todo"
+        placeholder="What need to be done?"
+        autocomplete="off"
+      >
+    </form>
+
+    <div id="js-todo-list" class="todo-list">
+      <!-- 動的に更新されるToDoリスト -->
+    </div>
+    <footer class="footer">
+      <span id="js-todo-count">ToDoアイテム数： 0</span>
+    </footer>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
 </body>
 </html>
